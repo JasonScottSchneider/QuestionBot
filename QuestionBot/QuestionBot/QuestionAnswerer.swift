@@ -47,16 +47,36 @@ let keywords = [
   "COMPUTER ",
   "NOKEYFOUND",  // no keyword found
   "SHUT UP",       // quit the chat
+    " DREAM",
+    " DREAM ",
+    " FRIEND",
+    " FRIEND ",
+    " FRIENDS",
+    "FRIENDS ",
+    " FRIENDS ",
+    "DREAMS ",
+    " DREAMS",
+    " DREAMS ",
 ]
 
 let conjugations = [
-  " ARE "  : " AM ",
-  " WERE " : " WAS ",
-  " YOU "  : " I ",
-  " YOUR " : " MY ",
-  " I'VE " : " YOU'VE ",
-  " I'M "  : " YOU'RE ",
-  " ME "   : " YOU ",
+    " ARE "  : " AM ",
+    " WERE " : " WAS ",
+    " YOU "  : " I ",
+    " YOUR " : " MY ",
+    " I'VE " : " YOU'VE ",
+    " I'M "  : " YOU'RE ",
+    " ME "   : " YOU ",
+    "YOU WOULD" : "I'D",
+    "YOU HAVE" : "I'VE",
+    "YOU WILL" : "I'LL",
+    "MY" : "YOUR",
+    "ARE" : "AM",
+    "YOU'VE" : "I HAVE",
+    "YOU'LL" : "I WILL",
+    "YOUR" : "MY",
+    "YOURS" : "MINE",
+    "YOU" : "ME",
 ]
 
 let replies = [
@@ -215,6 +235,17 @@ var replyLookup = [
   [ 98, 98, 7, ],
   [ 105, 105, 6, ], // NOKEYFOUND
   [ -1, -1, -1, ],  // SHUT
+    [ 58, 58, 4,],
+    [ 58, 58, 4,],
+    [ 92, 92, 6,],
+    [ 92, 92, 6,],
+    [ 92, 92, 6,],
+    [ 92, 92, 6,],
+    [ 92, 92, 6,],
+    [ 92, 92, 6,],
+    [ 58, 58, 4,],
+    [ 58, 58, 4,],
+    [ 58, 58, 4,],
 ]
 
 func findKeyword(in input: String) -> (index: Int, range: Range<String.Index>)? {
