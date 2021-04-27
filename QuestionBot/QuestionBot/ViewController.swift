@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         let answer = questionAnswerer.responseTo(question: question)
 
         displayAnswerTextOnScreen(answer)
-        questionField.placeholder = "Type your responses to Eliza here."
+        questionField.placeholder = "Type a response or 'shut up' to quit"
         questionField.text = nil
         askButton.isEnabled = false
     }

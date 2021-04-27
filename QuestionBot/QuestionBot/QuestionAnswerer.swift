@@ -49,7 +49,7 @@ let keywords = [
   "FRIEND ",
   "COMPUTER ",
   "NOKEYFOUND",  // no keyword found
-  "SHUT ",       // quit the chat
+  "SHUT UP",       // quit the chat
 ]
 
 let conjugations = [
