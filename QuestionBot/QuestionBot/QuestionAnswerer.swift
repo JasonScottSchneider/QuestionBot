@@ -1,11 +1,8 @@
 /*
     Joseph Weizenbaum's classic ELIZA chat bot in Swift.
     Based on the IBM PC BASIC program from CREATIVE COMPUTING by Patricia
-    Danielson and Paul Hashfield, and the Java adaptation by Jesper Juul.
-    Modified for XCode as a question/chat bot by Jason Schneider
-
-    Run this script from Terminal:
-    $ swift eliza.swift
+    Danielson and Paul Hashfield, the Java adaptation by Jesper Juul, and work by Matthijs Hollemans Hollance.
+    Modified for XCode as a question/chat bot by Jason Schneider.
 
     Press Ctrl-C or Ctrl-D to quit. (Or type "shut up".)
  */
