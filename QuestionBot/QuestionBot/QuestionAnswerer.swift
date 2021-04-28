@@ -71,7 +71,7 @@ let conjugations = [
     " YOUR " : " MY ",
     " I'VE " : " YOU'VE ",
     " I'M "  : " YOU'RE ",
-    " YOU "   : " I ",
+    " YOU "  : " I ",
     " YOU WOULD " : " I'D ",
     " YOU HAVE " : " I'VE ",
     " YOU WILL " : " I'LL ",
