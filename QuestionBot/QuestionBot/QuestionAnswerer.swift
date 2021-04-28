@@ -67,21 +67,17 @@ let keywords = [
 let conjugations = [
     " ARE "  : " AM ",
     " WERE " : " WAS ",
-    "YOU "  : "I ",
+    " ME "  : " YOU ",
     " YOUR " : " MY ",
-    "YOUR " : "MY ",
     " I'VE " : " YOU'VE ",
     " I'M "  : " YOU'RE ",
-    " ME "   : " YOU ",
+    " YOU "   : " I ",
     " YOU WOULD " : " I'D ",
     " YOU HAVE " : " I'VE ",
     " YOU WILL " : " I'LL ",
-    " MY " : " YOUR ",
     " YOU'VE " : " I HAVE ",
     " YOU'LL " : " I WILL ",
     " YOURS " : " MINE ",
-    " YOU " : " ME ",
-    " I " : " YOU ",
 ]
 
 let replies = [
@@ -273,12 +269,14 @@ extension String {
 
         // Swap "ARE" for "AM" and "AM" for "ARE", and so on.
         for (conj1, conj2) in conjugations {
+            print("conj1 is \(conj1) and conj2 is \(conj2)")
             if result.range(of: conj1) != nil {
                 result = result.replacingOccurrences(of: conj1, with: conj2)
             } else {  // try swapping the other way around
                 result = result.replacingOccurrences(of: conj2, with: conj1)
             }
         }
+        print("the result is \(result)")
         return result
     }
 }
@@ -291,7 +289,7 @@ func nextReply(for index: Int) -> String {
   if replyLookup[index][0] == replyLookup[index][1] + replyLookup[index][2] {
     replyLookup[index][0] = replyLookup[index][1]
   }
-
+    print("the reply is \(reply)")
   return reply
 }
 
@@ -311,7 +309,7 @@ func parse(_ text: String) -> String {
   var remainder = ""
   var k = 35          // nothing found
   // Find keyword in the input.
-    print(input)
+    print("the input is \(input)")
   if let (index, range) = findKeyword(in: input) {
 
     if index == 36 {     // SHUT
@@ -325,7 +323,7 @@ func parse(_ text: String) -> String {
                        .conjugated()
                        .trimmingCharacters(in: .whitespaces)
                        .replacingOccurrences(of: "!", with: "")
-    print(remainder)
+    print("the remainder is \(remainder)")
     k = index
   }
 
