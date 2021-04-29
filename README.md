@@ -8,6 +8,6 @@ The interesting part is that ELIZA will have a hiccup and not use the correct ca
 <img src="ELIZA4.png" />
 More can be read about ELIZA from <a href="https://en.wikipedia.org/wiki/ELIZA">Wikipedia</a>.
 <br>
-In addition, here is an original article about ELIZA by Joesph Weizenbaum titled <a href="https://web.stanford.edu/class/linguist238/p36-weizenabaum.pdf">ELIZA A Computer Program For the Study of Natural Language Communication Between Man And Machine</a> in the Journal Communications of the ACM, volume 9 number 1 January 1966 
+In addition, here is an original article about ELIZA by Joesph Weizenbaum titled <a href="https://web.stanford.edu/class/linguist238/p36-weizenabaum.pdf"><strong>"ELIZA: A Computer Program For the Study of Natural Language Communication Between Man And Machine"</strong></a> in the <em>Journal Communications of the ACM</em>, volume 9 number 1, January 1966. 
 <br>
 After revising the code a bit, watch the redux demonstrated here: https://www.youtube.com/watch?v=GhYcaq34HkU
